@@ -9,7 +9,7 @@ using namespace std;
 template<class T>
 class GraphFunctions {
 public:
-    vector<T> GetTheLeastWeightDistance(Graph<T> graph, int StartVertex) { //поиск кратчайшего пут
+    vector<T> GetTheLeastWeightDistance(Graph<T> graph, int StartVertex) { //поиск кратчайшего пути
         set<pair<int, int>> Set;
         vector<T> Weights(graph.GetLength(), 1000000000);
         vector<bool> Flag(graph.GetLength(), false);
